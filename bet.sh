@@ -32,7 +32,7 @@ else
 fi
 
 function get_random() {
-	echo $(( $(od -A n -t u -N 2 /dev/random) % $RAND_END + $RAND_START ))
+	echo $(( $(od -A n -t u -N 2 /dev/urandom) % $RAND_END + $RAND_START ))
 }
 
 
